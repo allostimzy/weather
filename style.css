@@ -53,3 +53,12 @@ body {
     font-size: 20px;
     border-radius: 20px;
 }
+.secondSection button:hover {
+    padding: 17px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    border: 2px dotted white;
+}
+
