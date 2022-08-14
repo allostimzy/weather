@@ -7,7 +7,10 @@
 }
 
 body {
-    background-color: #21184f;
+   
+    color: white;
+    background: #0f0c29;
+
     
 }
 .headerhold  {
@@ -37,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .secondSection input {
     background: transparent;
@@ -61,4 +65,70 @@ body {
     color: white;
     border: 2px dotted white;
 }
+.thirdSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    justify-content: center;
+}
+.today {
+    background-color: white;
+    width: 30rem;
+    border-radius: 20px;
+    padding: 10px;
+    color:#21184f;
+    
+    
+}
+.subToday {
+    display: flex;
+    flex-direction: row;
+    
+}
+.info {
+    /* background-color: pink; */
+    width: 18rem;
+    padding: 10px;
+}
+.cityName {
+    margin-top: 20px;
+}
+.cityName h2 {
+    font-size: 30px;
+}
+.tempInfo {
+    margin-top: 30px;
+}
+.tempInfo h1 {
+    font-size: 70px;
+}
 
+.weatherIcon img {
+    width: 200px;
+    padding-top: 40px;
+}
+
+.rowInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    
+}
+.rowInfo h3 {
+    font-size: 30px;
+}
+
+
+
+.fourthSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10vh;
+}
