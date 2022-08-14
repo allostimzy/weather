@@ -28,7 +28,7 @@ document.querySelector('.weatherIcon').innerHTML = '';
 fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value}&appid=66b3cc7995d5e0275a5da3ff0fb540df&units=metric`)
     .then(response => response.json())
     .then(data => {
-    
+        let cod = data.cod
         let callCityName = data.city.name
         let country = data.city.country
         let callTemp = data.list[0].main.temp
@@ -37,6 +37,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value}&app
         let callHumidity = data.list[0].main.humidity
         let callPressure = data.list[0].main.pressure
         let callWindSpeed = data.list[0].wind.speed
+        
     
 //Time to append them Tim
         cityName.append(`${callCityName}` + `  (${country})`)
@@ -47,7 +48,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value}&app
         pressure.append(callPressure)
 
 //Display my personalized icon--------------------
-
+     
 //This is an icon list for Drizzy and Rainy weather condition 
         if (callCondition === 'moderate rain' || callCondition === 'shower rain' || callCondition === 'drizzle' || callCondition === 'drizzle rain') {
           var img = document.createElement("img");
@@ -150,6 +151,9 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value}&app
 
           var weatherIcon = document.querySelector(".weatherIcon");
           weatherIcon.appendChild(img);
+      }
+        else if (cod ==! "200") {
+          console.log("try me")
       }
     })
    
