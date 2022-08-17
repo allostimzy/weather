@@ -133,3 +133,101 @@ body {
     width: 100%;
     margin-top: 10vh;
 }
+
+
+
+@media (max-width: 375px) {
+    .headerhold  {
+        width: 100%;
+        height: 15vh;
+        
+    }
+    .headerhold h1 {
+        font-size: m30px;
+        margin-top: 5px;
+        margin-left: 30px;
+        color: white;
+    }
+    .secondSection {
+        width: 100%;
+        margin-top: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        
+    }
+    .secondSection input {
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 20px;
+        width: 180px;
+        color: white;
+        font-size: 15px;
+        margin-right: 12px;
+    }
+    .secondSection button {
+        padding: 9px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+    .secondSection button:hover {
+        padding: 9px;
+        font-size: 15px;
+        border-radius: 20px;
+        background: transparent;
+        color: white;
+        border: 2px dotted white;
+    }
+    .today {
+        background-color: white;
+        width: 17rem;
+        border-radius: 20px;
+        padding: 10px;
+        color:#21184f;
+    }
+    .info {
+        
+        width: 12rem;
+        padding: 6px;
+    }
+    .cityName {
+        margin-top: 7px;
+    }
+    .cityName h2 {
+        font-size: 15px;
+    }
+    .tempInfo {
+        margin-top: 45px;
+    }
+    .tempInfo h1 {
+        font-size: 45px;
+    }
+    .weatherIcon {
+        width: 150px;
+        margin-left: 30px;
+    }
+    
+    .weatherIcon img {
+        width: 150px;
+        
+    }
+    
+    .rowInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        text-align: center;
+        
+    }
+    .rowInfo h3 {
+        font-size: 15px;
+    }
+    .rowInfo p {
+        font-size: 11px;
+    }
+    
+}

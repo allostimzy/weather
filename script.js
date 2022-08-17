@@ -5,6 +5,7 @@ let enterCity = document.getElementById("cName");
 let searchBtn = document.getElementById("searchBtn");
 
 searchBtn.addEventListener("click", function() {
+  searchBtn.disabled = true //--------I stopped the user from doulbe-clicking on the button (this will stop them from appending two or more results)
 
 let cityName = document.getElementById('cityName');  //==append city name here
 let temp = document.getElementById('temp'); //==append temperature in celcius here
@@ -152,9 +153,15 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${enterCity.value}&app
           var weatherIcon = document.querySelector(".weatherIcon");
           weatherIcon.appendChild(img);
       }
-        else if (cod ==! "200") {
-          console.log("try me")
+        else if (callCondition === 'mist' || callCondition === 'Smoke' || callCondition === 'Haze' || callCondition === '	sand/ dust whirls' || callCondition === 'fog' || callCondition === 'sand' || callCondition === 'dust' || callCondition === 'volcanic ash' || callCondition === 'squalls' || callCondition === 'tornado') {
+          var img = document.createElement("img");
+          img.src = "./images/amcharts_weather_icons_1.0.0/animated/haze.gif";
+
+          var weatherIcon = document.querySelector(".weatherIcon");
+          weatherIcon.appendChild(img);
+        
       }
+      searchBtn.disabled = false  //------after the function runs, then the button is enabled to listen for another click
     })
-   
+    
 })
