@@ -137,11 +137,6 @@ body {
 
 
 @media (max-width: 375px) {
-    .headerhold  {
-        width: 100%;
-        height: 15vh;
-        
-    }
     .headerhold h1 {
         font-size: m30px;
         margin-top: 5px;
