@@ -137,12 +137,6 @@ body {
 
 
 @media (max-width: 375px) {
-    .headerhold h1 {
-        font-size: m30px;
-        margin-top: 5px;
-        margin-left: 30px;
-        color: white;
-    }
     .secondSection {
         width: 100%;
         margin-top: 40px;
@@ -201,22 +195,19 @@ body {
         font-size: 45px;
     }
     .weatherIcon {
-        width: 150px;
+        width: 120px;
         margin-left: 30px;
     }
-    
     .weatherIcon img {
-        width: 150px;
+        width: 120px;
         
     }
-    
     .rowInfo {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 5px;
         text-align: center;
-        
     }
     .rowInfo h3 {
         font-size: 15px;
@@ -224,5 +215,16 @@ body {
     .rowInfo p {
         font-size: 11px;
     }
-    
+    .subhold{
+        margin-top: 50px;
+        width: 50%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6rem;
+    }
+    .subhold h1 {
+        font-size: 2rem;
+    }
 }
