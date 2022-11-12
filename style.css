@@ -226,4 +226,8 @@ body {
     .subhold h1 {
         font-size: 2rem;
     }
+    .subhold img {
+        width: 60px;
+        height: 60px;
+    }
 }
